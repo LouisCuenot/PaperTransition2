@@ -10,13 +10,20 @@ function App() {
 
 
   return (
-    <Canvas>
-      <Scene/>
-      <Controls/>
-      <Lights/>
-      <Camera/>
-      
-    </Canvas>
+
+      <Canvas 
+        shadows
+      >
+        <Scene/>
+        {
+          <Controls/>
+        }
+        
+        <Lights/>
+        <Camera/>
+
+      </Canvas>
+
   )
 }
 
